@@ -1454,6 +1454,423 @@ a:hover {
     }
 }
 
+/* ========================================
+   NEWS SECTION
+   ======================================== */
+.news {
+    background: var(--off-white);
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.news-card {
+    background: var(--white);
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    gap: 20px;
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-normal);
+    border: 1px solid var(--light-gray);
+}
+
+.news-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+}
+
+.news-card.highlight {
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+    color: var(--white);
+    border: none;
+    grid-column: span 2;
+}
+
+.news-card.highlight .news-content h3 {
+    color: var(--white);
+}
+
+.news-card.highlight .news-content p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.news-card.highlight .news-tag {
+    background: var(--gold);
+}
+
+.news-date {
+    flex-shrink: 0;
+    text-align: center;
+    padding: 12px;
+    background: var(--off-white);
+    border-radius: 12px;
+    min-width: 70px;
+}
+
+.news-card.highlight .news-date {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.news-date .month {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--primary);
+    text-transform: uppercase;
+}
+
+.news-card.highlight .news-date .month {
+    color: var(--accent-light);
+}
+
+.news-date .year {
+    display: block;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--primary-dark);
+}
+
+.news-card.highlight .news-date .year {
+    color: var(--white);
+}
+
+.news-content {
+    flex: 1;
+}
+
+.news-tag {
+    display: inline-block;
+    padding: 4px 12px;
+    background: var(--accent);
+    color: var(--white);
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.news-content h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: var(--primary-dark);
+}
+
+.news-content p {
+    font-size: 0.9rem;
+    color: var(--gray);
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+/* ========================================
+   HERO ENHANCEMENTS
+   ======================================== */
+.hero-affiliation {
+    font-size: 1rem;
+    color: var(--gray);
+    margin-bottom: 20px;
+}
+
+.hero-affiliation i {
+    color: var(--primary);
+    margin-right: 8px;
+}
+
+/* ========================================
+   IMPACT STATS
+   ======================================== */
+.impact-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-bottom: 48px;
+}
+
+.impact-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 24px;
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--light-gray);
+}
+
+.impact-item i {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    color: var(--white);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+}
+
+.impact-content {
+    flex: 1;
+}
+
+.impact-number {
+    display: block;
+    font-family: var(--font-heading);
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--primary-dark);
+    line-height: 1;
+}
+
+.impact-label {
+    font-size: 0.85rem;
+    color: var(--gray);
+}
+
+/* ========================================
+   MENTORSHIP SECTION
+   ======================================== */
+.mentorship-section {
+    margin-top: 60px;
+    padding: 40px;
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+    border-radius: 20px;
+    color: var(--white);
+}
+
+.mentorship-section h3 {
+    color: var(--white);
+    text-align: center;
+    margin-bottom: 32px;
+    font-size: 1.5rem;
+}
+
+.mentorship-section h3 i {
+    margin-right: 12px;
+    color: var(--accent-light);
+}
+
+.mentorship-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.mentorship-card {
+    text-align: center;
+    padding: 24px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+}
+
+.mentorship-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+}
+
+.mentorship-icon i {
+    font-size: 1.5rem;
+    color: var(--accent-light);
+}
+
+.mentorship-number {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1;
+    margin-bottom: 8px;
+}
+
+.mentorship-label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--accent-light);
+    margin-bottom: 8px;
+}
+
+.mentorship-card p {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 0;
+}
+
+/* ========================================
+   CARD DESCRIPTION
+   ======================================== */
+.card-description {
+    font-size: 0.95rem;
+    color: var(--gray);
+    margin-bottom: 16px;
+    line-height: 1.6;
+}
+
+.research-card.featured .card-description {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.card-highlights li i {
+    color: var(--accent);
+    margin-right: 8px;
+}
+
+.research-card.featured .card-highlights li i {
+    color: var(--accent-light);
+}
+
+/* ========================================
+   PUBLICATION STATUS
+   ======================================== */
+.pub-status {
+    display: inline-block;
+    padding: 4px 10px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 4px;
+    margin-top: 8px;
+}
+
+.pub-status.accepted {
+    background: var(--success);
+    color: var(--white);
+}
+
+/* ========================================
+   OPEN FOR SECTION
+   ======================================== */
+.open-for {
+    margin-top: 32px;
+}
+
+.open-for h4 {
+    margin-bottom: 16px;
+    color: var(--primary-dark);
+}
+
+.open-for ul {
+    list-style: none;
+}
+
+.open-for li {
+    padding: 8px 0;
+    font-size: 0.95rem;
+    color: var(--dark-gray);
+}
+
+.open-for li i {
+    color: var(--accent);
+    margin-right: 10px;
+}
+
+/* ========================================
+   FOOTER ENHANCEMENTS
+   ======================================== */
+.footer-logo {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--accent-light);
+    margin-bottom: 16px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin: 20px 0;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+    transition: color var(--transition-fast);
+}
+
+.footer-links a:hover {
+    color: var(--accent-light);
+}
+
+.footer-copyright {
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
+
+/* ========================================
+   ADVISOR STYLING
+   ======================================== */
+.edu-advisor {
+    font-size: 0.9rem;
+    color: var(--primary);
+    font-weight: 500;
+}
+
+.edu-advisor i {
+    margin-right: 6px;
+}
+
+/* ========================================
+   RESPONSIVE - NEW SECTIONS
+   ======================================== */
+@media (max-width: 1024px) {
+    .news-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .news-card.highlight {
+        grid-column: span 2;
+    }
+
+    .impact-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .mentorship-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .news-card.highlight {
+        grid-column: span 1;
+    }
+
+    .news-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .impact-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .mentorship-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+}
+
 /* Print Styles */
 @media print {
     .navbar,
