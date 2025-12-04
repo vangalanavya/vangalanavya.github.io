@@ -427,8 +427,8 @@ a:hover {
 }
 
 .image-frame {
-    width: 320px;
-    height: 450px;
+    width: 300px;
+    height: 400px;
     background: linear-gradient(135deg, var(--primary), var(--primary-light));
     border-radius: 20px;
     padding: 6px;
@@ -441,7 +441,7 @@ a:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center 25%;
+    object-position: center 35%;
     border-radius: 16px;
 }
 
