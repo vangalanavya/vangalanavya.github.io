@@ -427,8 +427,8 @@ a:hover {
 }
 
 .image-frame {
-    width: 350px;
-    height: 420px;
+    width: 320px;
+    height: 450px;
     background: linear-gradient(135deg, var(--primary), var(--primary-light));
     border-radius: 20px;
     padding: 6px;
@@ -440,9 +440,10 @@ a:hover {
 .profile-photo {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: center top;
+    object-fit: contain;
+    object-position: center;
     border-radius: 16px;
+    background: linear-gradient(135deg, var(--light-gray), var(--white));
 }
 
 .floating-card {
